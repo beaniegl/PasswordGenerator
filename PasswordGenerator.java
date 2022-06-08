@@ -13,12 +13,12 @@ public class PasswordGenerator {
 		Random r = new Random();
 
 		if (useSpecial){
-			for (int i = 0; i <= input; i++) {
+			for (int i = 0; i < input; i++) {
 				int randomNumber = r.nextInt(alphabetwSpesh.length);
 				password += alphabetwSpesh[randomNumber];
 			}
 		} else {
-			for (int i = 0; i <= input; i++) {
+			for (int i = 0; i < input; i++) {
 				int randomNumber = r.nextInt(alphabet.length);
 				password += alphabet[randomNumber];
 			}
